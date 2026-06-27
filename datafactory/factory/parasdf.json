@@ -1,0 +1,15 @@
+{
+	"name": "parasdf",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0dcb0a8a-1d7e-41b6-b015-3bbbdd108aaa",
+		"tenantId": "b91f25eb-6f5e-4346-9b74-77380f9a32ff"
+	}
+}
