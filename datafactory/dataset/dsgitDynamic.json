@@ -1,0 +1,30 @@
+{
+	"name": "dsgitDynamic",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServerlinkservice",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"prelativeurl": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().prelativeurl",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
