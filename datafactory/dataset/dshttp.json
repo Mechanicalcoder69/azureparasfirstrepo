@@ -1,0 +1,22 @@
+{
+	"name": "dshttp",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServerlinkservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/Mechanicalcoder69/azureparasfirstrepo/refs/heads/main/accounts.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
